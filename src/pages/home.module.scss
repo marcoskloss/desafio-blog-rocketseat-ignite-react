@@ -1,1 +1,56 @@
-// TODO
+.postCard {
+  max-width: 700px;
+  
+  & + & {
+    margin-top: 3rem;
+  }
+  &:last-child {
+    margin-bottom: 3rem;
+  }
+
+  header {
+    color: var(--white-500);
+    font-size: 1.75rem;
+    letter-spacing: -0.5px;
+
+    margin-bottom: 0.5rem;
+
+    cursor: pointer;
+    
+    &:hover {
+      filter: brightness(0.95);  
+    }
+  }
+
+  p {
+    color: var(--gray-300);
+    font-size: 1.125rem;
+  }
+
+  .postInfo {
+    margin-top: 1.5rem;
+
+    span + span {
+      margin-left: 1.5rem;
+    }
+
+    .date {
+      text-transform: capitalize;
+    }
+    .icon {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.loadPosts {
+  color: var(--pink-500);
+  font-size: 1.375rem;
+  margin-bottom: 2rem;
+  background: none;
+  border: none;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+}
